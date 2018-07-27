@@ -11,5 +11,5 @@ async def test(request):
 
 if __name__ == "__main__":
 	app.run(
-		port = os.environ('PORT') or 9300,
+		port = os.environ.get('PORT', 9300),
 	)
